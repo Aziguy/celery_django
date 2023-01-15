@@ -20,4 +20,5 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path("", include('application.urls'), name='test'),
     path("sender/", include('sender.urls'), name='sender'),
+    path("sender/", include('sender.urls'), name='sender-schedule'),
 ]

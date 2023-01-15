@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     "application",
     "django_celery_results",
     "django_celery_beat",
+    "sender",
 ]
 
 MIDDLEWARE = [
@@ -136,8 +137,8 @@ CELERY_BEAT_SCHEDULER = 'django_celery_beat.schedulers:DatabaseScheduler'
 EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'mandatairessm@gmail.com'
-EMAIL_HOST_PASSWORD = 'mandatairessm@01659948#'
+EMAIL_HOST_USER = 'username.login@gmail.com'
+EMAIL_HOST_PASSWORD = 'mypowelfulpassword'
 EMAIL_USE_TLS = True
 # EMAIL_USE_SSL = False
-DEFAULT_FROM_EMAIL = "Celery sender <mandatairess@gmail.com>"
+DEFAULT_FROM_EMAIL = "Celery sender <username.login@gmail.com>"
